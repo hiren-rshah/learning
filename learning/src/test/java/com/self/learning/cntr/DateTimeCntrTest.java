@@ -12,11 +12,11 @@ import java.util.Optional;
 import static org.junit.Assert.*;
 
 @RunWith(SpringRunner.class)
-@WebMvcTest(value = DayTimeCntr.class, secure = false)
-public class DayTimeCntrTest {
+@WebMvcTest(value = DateTimeCntr.class, secure = false)
+public class DateTimeCntrTest {
 
     @Autowired
-    DayTimeCntr dayTimeCntr;
+    DateTimeCntr dayTimeCntr;
 
     @Test
     public void getTimeTest(){

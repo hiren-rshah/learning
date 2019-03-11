@@ -11,7 +11,7 @@ import java.util.Objects;
 import java.util.Optional;
 
 @RestController
-public class DayTimeCntr {
+public class DateTimeCntr {
 
     @RequestMapping(value = {"/currentTime", "/currentTime/{timeZone}"}, method = {RequestMethod.GET})
     public String getTime(@PathVariable(value = "timeZone", required = false) Optional<String> timeZoneStr) {
