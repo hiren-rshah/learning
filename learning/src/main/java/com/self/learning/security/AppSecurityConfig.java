@@ -11,6 +11,7 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.NoOpPasswordEncoder;
+import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
 @Configuration
 @EnableWebSecurity
@@ -36,15 +37,23 @@ public class AppSecurityConfig extends WebSecurityConfigurerAdapter {
 		return provider;
 	}
 	
-	/*@Override
+	@Override
     protected void configure(HttpSecurity http) throws Exception {
-        http.authorizeRequests()
-                .antMatchers("/").permitAll()
-                .antMatchers("/h2_console/**").permitAll();
-
-        http.csrf().disable();
-        http.headers().frameOptions().disable();
-    }*/
+		http.csrf().disable()
+		.authorizeRequests().antMatchers("/login","/h2-console/**","/socker*/**").permitAll()
+		.anyRequest().authenticated()
+		.and()
+		.formLogin()
+		.loginPage("/login").permitAll()
+		.and()
+		.logout().invalidateHttpSession(true)
+		.clearAuthentication(true)
+		.logoutRequestMatcher(new AntPathRequestMatcher("/logout"))
+		.logoutSuccessUrl("/logout-success").permitAll();
+		
+		// Required to enable and load h2 console
+		http.headers().frameOptions().disable();
+    }
 	
 	/*public static void main(String args[]) {
 		BCryptPasswordEncoder bcrypt = new BCryptPasswordEncoder();

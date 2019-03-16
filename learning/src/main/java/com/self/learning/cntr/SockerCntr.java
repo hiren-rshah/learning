@@ -18,7 +18,7 @@ public class SockerCntr {
 	@Autowired
 	SoccerService soccerService;
 
-	@RequestMapping(value = "/sockerTeam", method = RequestMethod.GET, produces = "application/json")
+	@RequestMapping(value = "/sockerTeam", method = RequestMethod.GET/*, produces = "application/json"*/)
 	@ResponseBody
 	public ResponseEntity<List<PlayerResp>> getTeam() {
 		List<PlayerResp> players = soccerService.getAllTeamPlayers(1L);
