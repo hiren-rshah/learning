@@ -1,4 +1,4 @@
-package com.self.learning.entity;
+package com.self.learning.soccer;
 
 import javax.persistence.Entity;
 import javax.persistence.FetchType;

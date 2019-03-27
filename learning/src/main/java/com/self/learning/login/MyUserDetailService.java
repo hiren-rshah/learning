@@ -1,4 +1,4 @@
-package com.self.learning.service;
+package com.self.learning.login;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -6,9 +6,7 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
-import com.self.learning.entity.UserEnt;
-import com.self.learning.repo.UserRepository;
-import com.self.learning.security.UserPrincipal;
+import com.self.learning.login.security.UserPrincipal;
 
 @Service
 public class MyUserDetailService implements UserDetailsService {

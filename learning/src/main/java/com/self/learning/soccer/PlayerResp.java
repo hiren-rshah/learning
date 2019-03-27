@@ -1,8 +1,7 @@
-package com.self.learning.response;
+package com.self.learning.soccer;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.self.learning.entity.Player;
 
 import lombok.Data;
 

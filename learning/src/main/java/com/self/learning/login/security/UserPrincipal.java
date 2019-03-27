@@ -1,4 +1,4 @@
-package com.self.learning.security;
+package com.self.learning.login.security;
 
 import java.util.Collection;
 import java.util.Collections;
@@ -7,7 +7,7 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import com.self.learning.entity.UserEnt;
+import com.self.learning.login.UserEnt;
 
 public class UserPrincipal implements UserDetails {
 

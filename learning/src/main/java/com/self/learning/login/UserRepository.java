@@ -1,8 +1,11 @@
-package com.self.learning.repo;
+package com.self.learning.login;
+
+import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import com.self.learning.entity.UserEnt;
 
 public interface UserRepository extends JpaRepository<UserEnt, Integer> {
 	public UserEnt findByUsername(String username);
+	
+	public List<UserEnt> findAll();
 }

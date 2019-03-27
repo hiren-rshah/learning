@@ -1,4 +1,4 @@
-package com.self.learning.cntr;
+package com.self.learning.datetime;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -17,7 +17,8 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 
-import com.self.learning.service.DateTimeService;
+import com.self.learning.datetime.DateTimeCntr;
+import com.self.learning.datetime.DateTimeService;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 public class DateTimeCntrTest {

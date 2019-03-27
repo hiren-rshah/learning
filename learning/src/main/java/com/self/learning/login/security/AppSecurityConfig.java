@@ -1,4 +1,4 @@
-package com.self.learning.security;
+package com.self.learning.login.security;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;

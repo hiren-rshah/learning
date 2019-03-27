@@ -1,8 +1,6 @@
-package com.self.learning.service;
+package com.self.learning.soccer;
 
 import java.util.List;
-
-import com.self.learning.response.PlayerResp;
 
 public interface SoccerService {
 	public List<PlayerResp> getAllTeamPlayers(long teamId);

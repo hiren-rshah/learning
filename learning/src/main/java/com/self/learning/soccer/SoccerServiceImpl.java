@@ -1,4 +1,4 @@
-package com.self.learning.service;
+package com.self.learning.soccer;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,12 +6,6 @@ import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import com.self.learning.entity.Player;
-import com.self.learning.entity.Team;
-import com.self.learning.repo.PlayerRepository;
-import com.self.learning.repo.TeamRepository;
-import com.self.learning.response.PlayerResp;
 
 @Service
 public class SoccerServiceImpl implements SoccerService {

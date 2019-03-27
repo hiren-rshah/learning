@@ -1,4 +1,4 @@
-package com.self.learning.cntr;
+package com.self.learning.login;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

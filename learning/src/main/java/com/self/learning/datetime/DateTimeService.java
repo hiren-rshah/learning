@@ -1,4 +1,4 @@
-package com.self.learning.service;
+package com.self.learning.datetime;
 
 import java.time.ZoneId;
 import java.time.ZonedDateTime;

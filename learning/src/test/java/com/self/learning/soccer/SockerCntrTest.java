@@ -1,4 +1,4 @@
-package com.self.learning.cntr;
+package com.self.learning.soccer;
 
 import static org.junit.Assert.*;
 
